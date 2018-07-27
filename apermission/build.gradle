@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+apply plugin: 'aspectj-build-plugin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api group: 'org.aspectj', name: 'aspectjrt', version: '1.9.1'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

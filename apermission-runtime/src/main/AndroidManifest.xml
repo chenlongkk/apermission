@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.cck.apermission.runtime">
+    <application>
+        <activity android:name=".internal.APermissionActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection"
+                  android:launchMode="singleTask"
+                  android:theme="@style/emptyActivity"
+                  android:exported="false"
+        />
+    </application>
+</manifest>
