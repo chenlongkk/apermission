@@ -18,7 +18,7 @@ public enum  APermission {
         }
 
         mApp = application;
-        Permissions.aspectOf().injectPermissionCall(new APermissionCall());
+        Permissions.injectPermissionCall(new APermissionCall());
     }
 
     public Application getApplication() {

@@ -138,7 +138,7 @@ public class AspectJTransform extends Transform {
             return;
         }
         File out = provider.getContentLocation(root.getName(),sInput,sScopes,Format.DIRECTORY);
-        log("in dir:"+root.getName()+"out:"+out.getName());
+//        log("in dir:"+root.getName()+"out:"+out.getName());
         List<String> args = new ArrayList<>(produceCommonArgs());
         List<String> more = Arrays.asList(
                 "-inpath", root.getAbsolutePath(),
@@ -157,7 +157,7 @@ public class AspectJTransform extends Transform {
             return;
         }
         File out = provider.getContentLocation(in.getName(),sInput,sScopes,Format.JAR);
-        log("in jar:"+in.getName()+",file:"+in.getFile()+",out:"+out.getName());
+//        log("in jar:"+in.getName()+",file:"+in.getFile()+",out:"+out.getName());
         List<String> args = new ArrayList<>(produceCommonArgs());
         List<String> more = Arrays.asList(
                 "-injars", in.getFile().getAbsolutePath(),
@@ -188,7 +188,7 @@ public class AspectJTransform extends Transform {
     }
 
     private void invokeWaveImpl(List<String> argList) {
-        mLogger.lifecycle("execute waveAspects ,args:"+ Strings.join(argList," "));
+//        mLogger.lifecycle("execute waveAspects ,args:"+ Strings.join(argList," "));
         String[] args = new String[argList.size()];
         argList.toArray(args);
         Main compileTool = new Main();
