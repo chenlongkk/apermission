@@ -2,7 +2,7 @@
 基于aspectj的Android动态权限申请工具
 
 # TODO
-1. 无法开启java8语法支持
+1. 无法开启java8语法支持  [已修复]
 2. instantRun失效
 
 # 使用方式
